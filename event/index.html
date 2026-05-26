@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>A Fireplace Musical Event</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/event.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div id="toastContainer" aria-live="polite" aria-atomic="true"
+        style="position: fixed; top: 50px; left: 50%; transform: translate(-50%, -50%); z-index: 9999;">
+        <div id="toastMessage" class="toast align-items-center border-0" role="alert" aria-live="assertive"
+            aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg secondary-background fs-6 fw-normal">
+        <div class="container-fluid">
+            <a class="navbar-brand heading-font fs-4 nav-logo mr-5" href="#"><img class="logo" src="images/logo.png"
+                    alt="Fireplace logo" />FIREPLACE</a>
+            <button id="seatsButton" class="btn primary-background btn-sm py-1 d-flex align-items-center ms-5"
+                type="button">
+                <div class="spinner-grow spinner-grow-sm" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#trailer">Trailer</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#prices">Registration</a>
+                    </li>
+                    <li class="nav-item px-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Info
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="downloadCalendar dropdown-item">Download Event</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-2 position-relative">
+                        <a class="nav-link me-2" href="#preorder">Pre-Order</a>
+                        <a data-bs-toggle="offcanvas" data-bs-target="#preorderCanvas" aria-controls="offcanvasRight">
+                            <span
+                                class="noOfProducts top-0 start-100 translate-middle badge rounded-pill primary-background"
+                                style="display: none;">
+                                <span class="visually-hidden">Number of products</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#students">For Students</a>
+                    </li>
+                    <li class="nav-item px-2 nav-color">
+                        <a class="nav-link nav-color" aria-current="page" href="#gallery">Gallery</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="galaxy-background col-xxl-8 px-4 d-flex align-items-center justify-content-center">
+        <div class="event row align-items-center g-5 py-5 ms-0">
+            <div id="iam-image" class="col-10 col-sm-8 col-lg-5 mx-auto text-center">
+                <img src="images/I.png" class="d-block mx-auto img-fluid" alt="I AM Musical" width="100%" height="100%"
+                    loading="lazy">
+            </div>
+            <div class="stars"></div>
+            <div class="stars"></div>
+            <div class="stars"></div>
+            <div class="stars"></div>
+            <div class="stars"></div>
+            <div class="stars"></div>
+            <div class="stars"></div>
+            <div id="details" class="col-lg-7">
+                <h1 class="display-5 fw-bold text-white text-center" data-aos="fade-up">Welcome to
+                    Fireplace's 10th Anniversary
+                    Musical Event</h1>
+                <p class="fs-5 mb-4 text-white text-center" data-aos="fade-up" data-aos-delay="200">Join us as we
+                    celebrate a decade’s journey</p>
+                <h2 class="col text-white fw-bold lh-1 mb-3 text-center" data-aos="fade-up" data-aos-delay="400">29
+                    Nov 2024 <span class="fw-normal fs-4">7pm-10pm</span></h2>
+
+                <p class="gradient-link fs-4 fw-bold lh-1 text-center" data-aos="fade-up" data-aos-delay="600">
+                    <a href="https://g.co/kgs/TTw1h6a" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                            class="bi bi-geo-alt-fill mb-2 me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>
+                        Jalan Paya Terubong,<br>
+                        11500 Air Itam, Penang.
+                    </a>
+                </p>
+                <p class="lead text-white fw-normal" data-aos="fade-up" data-aos-delay="800">We are thrilled to invite
+                    you,
+                    your family and friends to witness our sensational production. It’s going
+                    to be a night to remember, filled with enchanting music, captivating
+                    performances and endless moments of joy.</p>
+
+                <div class="row text-center" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="col">
+                        <a href="#prices" class="btn primary-background round-btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+
+    <section id="trailer">
+        <div class="container pt-5">
+            <div class="row d-flex">
+                <div class="col-lg-8 py-3 text-center align-self-center embed-responsive embed-responsive-16by9">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/MegdQWRsEzw?si=s7ri9DY4xGdBFQOI"
+                            title="A Fireplace Musical Event" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img class="img-fluid" src="images/programme.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="prices" class="light-background text-center">
+        <div class="container py-5">
+            <h1 class="display-6 fw-bold heading-font">Ticket Prices</h1>
+            <p class="col-lg-8 mx-auto lead fw-normal pb-3">
+                80% of all contributions and fees received from this event will go to supporting those in need of
+                financial support for a higher education.
+            </p>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Junior</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">RM10<small
+                                    class="text-body-secondary fw-light">/child</small></h3>
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li>12 and Below</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card mb-4 rounded-3 shadow-sm primary-border">
+                        <div class="card-header py-3 primary-background">
+                            <h4 class="my-0 fw-normal">Standard</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">RM30<small
+                                    class="text-body-secondary fw-light">/Adult</small></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Senior</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title pricing-card-title">RM0<small
+                                    class="text-body-secondary fw-light">/Senior</small></h3>
+                            <ul class="list-unstyled mt-3 mb-0">
+                                <li>60 and Above</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="bookingForm" class="container bg-light bg-gradient p-5 col-lg-8">
+            <h1 class="display-6 fw-bold heading-font">Booking Form</h1>
+            <p class="lead mx-auto pb-3">
+                Kindly fill in the registration form below if you can attend.</p>
+            <form id="rsvpForm" class="row g-3 pb-5 text-start needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="name" class="form-control" id="inputName" required>
+                    <div class="invalid-feedback">
+                        Please enter your name
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" required>
+                    <div id="email-feedback" class="invalid-feedback">
+                        Please enter a valid email
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="inputAdults" class="form-label">How many adults?</label>
+                    <input type="number" class="form-control" id="inputAdults" required>
+                    <div class="invalid-feedback">
+                        Please provide the number of adults
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="inputKids" class="form-label">How many children?</label>
+                    <input type="number" class="form-control" id="inputKids" required>
+                    <div class="invalid-feedback">
+                        Please provide the number of kids
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="inputSeniors" class="form-label">How many seniors?</label>
+                    <input type="number" class="form-control" id="inputSeniors" required>
+                    <div class="invalid-feedback">
+                        Please provide the number of seniors
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="referalInput" class="form-label">How did you hear about this Event?</label>
+                    <input type="text" class="form-control" id="referalInput" required>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="reminderCheck">
+                        <label class="form-check-label" for="reminderCheck">
+                            I would like to receive a reminder 1 week before the event by email.
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="acceptCheck" required>
+                        <label class="form-check-label fw-bold" for="acceptCheck">
+                            I accept the terms
+                        </label>
+                        <p>Thank you for registering!<br>
+                            We respect your privacy; information provided will remain confidential and used for booking
+                            purposes only.</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button id="submit-registration" type="submit"
+                        class="btn primary-background round-btn">Submit</button>
+                </div>
+            </form>
+            <p>If you're facing any problems, feel free to contact <button
+                    class="copy-address button-link font-monospace fs-6" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-title="Copy">fireplaceschool@gmail.com
+                    <span id="copy-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                        </svg></span></button></p>
+        </div>
+
+        <div id="loader" class="container p-5 mt-5 col-lg-8" style="display: none">
+            <div class="row justify-content-center">
+                <div class="heart-loading">
+
+                </div>
+            </div>
+        </div>
+        <div id="thankyou" class="container green bg-gradient p-5 mt-5 col-lg-8" style="display: none;">
+            <h1 class="display-6 fw-bold heading-font">Thank you!</h1>
+            <p class="lead mx-auto pb-3">
+                A copy of your booking has been sent to your email 🎉 <br>
+                For any issues/questions feel free to contact
+                <button class="copy-address font-monospace fs-6" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Copy">fireplaceschool@gmail.com
+                    <span id="copy-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+                        </svg></span></button>
+            </p>
+            <h1 class="fs-4 lead fw-normal">What's next?</h1>
+            <p class="text-start lead mx-auto position-relative align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                </svg> Pre-order some designs made by our students <a href="#preorder"
+                    class="link-danger link-underline-opacity-0">here</a><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-emoji-sunglasses" viewBox="0 0 16 16">
+                    <path
+                        d="M4.968 9.75a.5.5 0 1 0-.866.5A4.5 4.5 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.5 3.5 0 0 1 8 11.5a3.5 3.5 0 0 1-3.032-1.75M7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A3 3 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.2 4.2 0 0 0 8 5c-.35 0-.69.04-1 .116" />
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0" />
+                </svg> Complete <a href="#students" class="link-danger link-underline-opacity-0">this</a> special side
+                quest if you're a student/former student <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-download" viewBox="0 0 16 16">
+                    <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                    <path
+                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                </svg>
+                <a class="downloadCalendar link-danger link-underline-opacity-0">Download</a> the event to your calendar <br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                    <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9z"/>
+                    <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1zm1.038 3.018a6 6 0 0 1 .924 0 6 6 0 1 1-.924 0M0 3.5c0 .753.333 1.429.86 1.887A8.04 8.04 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5M13.5 1c-.753 0-1.429.333-1.887.86a8.04 8.04 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1"/>
+                </svg>
+                Test your animal knowledge with this <a href="#quiztime" class="link-danger link-underline-opacity-0">quiz by Wilbert</a>
+            </p>
+
+
+        </div>
+    </section>
+
+
+    <section id="preorder" class="section-products py-5">
+        <div class="container py-5">
+            <h1 class="display-6 fw-bold heading-font text-center">Pre-Order Now!</h1>
+            <p class="col-lg-8 mx-auto lead fw-normal pb-3 text-center ">
+                Specially designed exclusives for this event. By pre-ordering, you help us estimate the number of stock
+                to
+                prepare <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-stars" viewBox="0 0 23 23">
+                    <path
+                        d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                </svg>
+            </p>
+            <div class="row">
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-1" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li id="iam-shirt"><a class="product-link"></a></li>
+                                <li id="more-peace-more-hope-shirt"><a class="product-link"></a></li>
+                            </ul>
+                        </div>
+                        <div class="part-2 p-2">
+                            <form class="preOrderForm needs-validation" novalidate>
+                                <input type="hidden" name="product" value="T-shirt">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>I AM T-shirt</h6>
+                                        <p>RM40</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="add-button">
+                                            <span>Add</span>
+                                            <div class="cart">
+                                                <svg viewBox="0 0 36 26">
+                                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5">
+                                                    </polyline>
+                                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Size Picker -->
+                                    <div class="form-group col">
+                                        <label>Size</label>
+                                        <div class="size-picker" id="size1">
+                                            <div data-size="S" class="small">S</div>
+                                            <div data-size="M" class="medium">M</div>
+                                            <div data-size="L" class="large">L</div>
+                                            <div data-size="XL" class="xlarge">XL</div>
+                                            <div data-size="2XL" class="2xlarge">2XL</div>
+                                            <div data-size="3XL" class="3xlarge">3XL</div>
+                                        </div>
+                                        <input type="hidden" id="selected-size" name="size" required>
+
+                                    </div>
+
+                                    <div class="form-group col-auto">
+                                        <label>Color</label>
+                                        <div class="color-picker" id="color1">
+                                            <div class="white" data-color="White"></div>
+                                            <div class="blue" data-color="Blue"></div>
+                                        </div>
+                                        <input type="hidden" id="selected-color" name="color" required>
+                                        <div class="invalid-feedback">
+                                            Please select a color.
+                                        </div>
+                                    </div>
+                                    <p id="shirtFeedback" class="text-danger product-feedback" style="display: none;">
+                                        Please
+                                        select a size and color</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cap -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-2" class="single-product">
+                        <div class="part-1">
+                        </div>
+                        <div class="part-2 p-2">
+                            <div class="row">
+                                <div class="col">
+                                    <h6>I AM cap</h6>
+                                    <h6>RM25</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <form class="preOrderForm">
+                                        <input type="hidden" name="product" value="Cap">
+                                        <button type="submit" class="add-button">
+                                            <span>Add</span>
+                                            <div class="cart">
+                                                <svg viewBox="0 0 36 26">
+                                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5">
+                                                    </polyline>
+                                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mug -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-3" class="single-product">
+                        <div class="part-1">
+                            <ul>
+                                <li id="iam-mug-front"><a class="product-link"></a></li>
+                                <li id="iam-mug-back"><a class="product-link"></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="part-2 p-2">
+                            <div class="row">
+                                <div class="col">
+                                    <h6>I AM mug</h6>
+                                    <h6>RM20</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <form class="preOrderForm">
+                                        <input type="hidden" name="product" value="Mug">
+                                        <button type="submit" class="add-button">
+                                            <span>Add</span>
+                                            <div class="cart">
+                                                <svg viewBox="0 0 36 26">
+                                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5">
+                                                    </polyline>
+                                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tote bag -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div id="product-4" class="single-product">
+                        <div class="part-1">
+                        </div>
+                        <div class="part-2 p-2">
+                            <div class="row">
+                                <div class="col">
+                                    <h6 class="fs-6">I AM tote bag</h6>
+                                    <h6 class="fs-6">RM20</h6>
+                                </div>
+                                <div class="col-auto">
+                                    <form class="preOrderForm">
+                                        <input type="hidden" name="product" value="Tote-bag">
+                                        <button type="submit" class="add-button">
+                                            <span>Add</span>
+                                            <div class="cart">
+                                                <svg viewBox="0 0 36 26">
+                                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5">
+                                                    </polyline>
+                                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <button type="button"
+                        class="btn primary-background round-btn position-relative d-flex align-items-center"
+                        data-bs-toggle="offcanvas" data-bs-target="#preorderCanvas" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-cart4" viewBox="0 0 18 18">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                        </svg> Go to Cart
+                        <span
+                            class="noOfProducts position-absolute top-0 start-100 translate-middle badge rounded-pill pill-color"
+                            style="display: none;">
+                            <span class="visually-hidden">Number of products</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="preorderCanvas" aria-labelledby="preorderCanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="preorderCanvasLabel"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                    height="23" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg> Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container">
+                <div class="shopping-cart">
+                    <div id="preorder-thankyou" class="alert alert-success" role="alert" style="display: none;">
+                    </div>
+
+                    <div id="cart-alert" class="alert alert-info" role="alert">
+                        Cart is empty. You can add pre-order items to your cart
+                    </div>
+                    <!-- Product Entries -->
+
+                    <div id="cart"></div>
+
+                    <!-- Totals Section -->
+                    <div id="total-checkout" style="display: none;">
+                        <div class="totals row mt-3 d-flex justify-content-end">
+                            <div class="col"><label>Estimated Total</label></div>
+                            <div class="totals-item totals-item-total col-auto">
+                                <div class="totals-value" id="cart-total"></div>
+                            </div>
+                        </div>
+                        <div class="row pb-5 align-items-center">
+                            <div class="col">
+                                <label for="checkoutName" class="col-form-label">Name</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="text" id="checkoutName" class="form-control">
+                            </div>
+                            <p id="checkoutFeedback" class="text-end text-danger product-feedback hidden">Please enter
+                                your name</p>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <button id="submit-checkout"
+                                    class="btn primary-background round-btn checkout">Pre-Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="students" class="accent py-5">
+        <div class="container">
+            <h1 class="display-6 fw-bold heading-font text-center">For Students</h1>
+            <p class="lead fw-normal mb-5 text-center">
+                We prepared a special throwback side quest for our present and former students
+            </p>
+            <div id="quiz" class="col-sm-12 col-md-8 mx-auto p-5 bg-light bg-gradient rounded-3">
+                <p class="fs-4">How well do you know Fireplace?</hp>
+
+                <div class="progress mt-3 mb-5">
+                    <div id="progressBar" class="progress-bar bg-info progress-bar-striped progress-bar-animated"
+                        role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+                <form id="quizForm">
+                    <div class="step step-1 active">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question1" class="form-label">Enter your name</label>
+                                <input type="text" id="question1" class="form-control">
+                                <p id="quizFeedback" class="text-start text-danger product-feedback py-1 hidden">Please
+                                    enter
+                                    your name</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-2">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question2" class="form-label">What was the school’s name before it became
+                                    "Fireplace"?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q21" name="question2" value="Lighthouse"
+                                                class="form-check-input">
+                                            <label for="q21" class="form-check-label form-label">Lighthouse</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q22" name="question2" value="Cornerstone"
+                                                class="form-check-input">
+                                            <label for="q22" class="form-check-label form-label">Cornerstone</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q23" name="question2" value="Beacon"
+                                                class="form-check-input">
+                                            <label for="q23" class="form-check-label form-label">Beacon</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q24" name="question2" value="Bacon"
+                                                class="form-check-input">
+                                            <label for="q24" class="form-check-label form-label">Bacon</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-3">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question3" class="form-label">Who made the school logo?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="q31" name="question3" value="Joel Tan"
+                                                class="form-check-input">
+                                            <label for="q31" class="form-check-label form-label">Joel Tan</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="q32" name="question3" value="Jun Zhe"
+                                                class="form-check-input">
+                                            <label for="q32" class="form-check-label form-label">Jun Zhe</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="checkbox" id="q33" name="question3" value="Lee Fong"
+                                                class="form-check-input">
+                                            <label for="q33" class="form-check-label form-label">Lee Fong</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="q34" name="question3" value="Joel Lim"
+                                                class="form-check-input">
+                                            <label for="q34" class="form-check-label form-label">Joel Lim</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-4">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question4" class="form-label">The first student to enroll in
+                                    Fireplace:</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q41" name="question4" value="Joel Tan"
+                                                class="form-check-input">
+                                            <label for="q41" class="form-check-label form-label">Joel Tan</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q42" name="question4" value="Jun Zhe"
+                                                class="form-check-input">
+                                            <label for="q42" class="form-check-label form-label">Jun Zhe</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q43" name="question4" value="Lee Fong"
+                                                class="form-check-input">
+                                            <label for="q43" class="form-check-label form-label">Lee Fong</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q44" name="question4" value="Joel Lim"
+                                                class="form-check-input">
+                                            <label for="q44" class="form-check-label form-label">Joel Lim</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-5">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question5" class="form-label">Which is the most common name in Fireplace
+                                    history?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q51" name="question5" value="Abigail"
+                                                class="form-check-input">
+                                            <label for="q51" class="form-check-label form-label">Abigail</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q52" name="question5" value="Ayden"
+                                                class="form-check-input">
+                                            <label for="q52" class="form-check-label form-label">Ayden</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q53" name="question5" value="Isaac"
+                                                class="form-check-input">
+                                            <label for="q53" class="form-check-label form-label">Isaac</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q54" name="question5" value="Joel"
+                                                class="form-check-input">
+                                            <label for="q54" class="form-check-label form-label">Joel</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-6">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question7" class="form-label">Who is the loudest teacher in
+                                    Fireplace?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q61" name="question6" value="Sion"
+                                                class="form-check-input">
+                                            <label for="q61" class="form-check-label form-label">Sion</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q62" name="question6" value="Tabitha"
+                                                class="form-check-input">
+                                            <label for="q62" class="form-check-label form-label">Tabitha</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q63" name="question6" value="John"
+                                                class="form-check-input">
+                                            <label for="q63" class="form-check-label form-label">John</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q64" name="question6" value="Khoo"
+                                                class="form-check-input">
+                                            <label for="q64" class="form-check-label form-label">Khoo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-7">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question12" class="form-label">Who is the most senior student in Fireplace
+                                    history?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q71" name="question7" value="David"
+                                                class="form-check-input">
+                                            <label for="q71" class="form-check-label form-label">David</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q72" name="question7" value="Isaac Tan"
+                                                class="form-check-input">
+                                            <label for="q72" class="form-check-label form-label">Isaac Tan</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q73" name="question7" value="Faye"
+                                                class="form-check-input">
+                                            <label for="q73" class="form-check-label form-label">Faye</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q74" name="question7" value="Jaryl"
+                                                class="form-check-input">
+                                            <label for="q74" class="form-check-label form-label">Jaryl</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-8">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question8" class="form-label">Who is the loudest person in Fireplace
+                                    history?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q81" name="question8" value="Glad"
+                                                class="form-check-input">
+                                            <label for="q81" class="form-check-label form-label">Glad</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q82" name="question8" value="Isaac Cheng"
+                                                class="form-check-input">
+                                            <label for="q82" class="form-check-label form-label">Isaac Cheng</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q83" name="question8" value="Abigail Tan"
+                                                class="form-check-input">
+                                            <label for="q83" class="form-check-label form-label">Abigail Tan</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q84" name="question8" value="Lee Yue"
+                                                class="form-check-input">
+                                            <label for="q84" class="form-check-label form-label">Lee Yue</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-9">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question9" class="form-label">Who is the tallest person in Fireplace
+                                    history?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q91" name="question9" value="David"
+                                                class="form-check-input">
+                                            <label for="q91" class="form-check-label form-label">David</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q92" name="question9" value="Isaac Cheng"
+                                                class="form-check-input">
+                                            <label for="q92" class="form-check-label form-label">Isaac Cheng</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q93" name="question9" value="Ken Hong"
+                                                class="form-check-input">
+                                            <label for="q93" class="form-check-label form-label">Ken Hong</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q94" name="question9" value="Joshua"
+                                                class="form-check-input">
+                                            <label for="q94" class="form-check-label form-label">Joshua</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-10">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question10" class="form-label">First "official" Fireplace graduates were
+                                    in?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q101" name="question10" value="2015"
+                                                class="form-check-input">
+                                            <label for="q101" class="form-check-label form-label">2015</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q102" name="question10" value="2018"
+                                                class="form-check-input">
+                                            <label for="q102" class="form-check-label form-label">2018</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q103" name="question10" value="2019"
+                                                class="form-check-input">
+                                            <label for="q103" class="form-check-label form-label">2019</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q104" name="question10" value="2024"
+                                                class="form-check-input">
+                                            <label for="q104" class="form-check-label form-label">2024</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button type="button" class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="button" class="btn primary-background round-btn next">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step step-11">
+                        <div class="row justify-content-center">
+                            <div class="col-10">
+                                <label for="question11" class="form-label">Who is the scariest person in
+                                    Fireplace?</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q111" name="question11" value="Isaac Tan"
+                                                class="form-check-input">
+                                            <label for="q111" class="form-check-label form-label">Isaac Tan</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q112" name="question11" value="Lee Yue"
+                                                class="form-check-input">
+                                            <label for="q112" class="form-check-label form-label">Lee Yue</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-check">
+                                            <input type="radio" id="q113" name="question11" value="Tabitha"
+                                                class="form-check-input">
+                                            <label for="q113" class="form-check-label form-label">Tabitha</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" id="q114" name="question11" value="Joel Lim"
+                                                class="form-check-input">
+                                            <label for="q114" class="form-check-label form-label">Joel Lim</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end pt-5 pb-2">
+                            <div class="col">
+                                <button id="previousButton" type="button"
+                                    class="btn primary-background round-btn prev">Previous</button>
+                            </div>
+                            <div class="col-auto">
+                                <button id="submit-quiz" type="submit"
+                                    class="btn primary-background round-btn next">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row justify-content-center">
+                <div id="quiz-thankyou" class="col-7 alert alert-success justify-content-center" role="alert"
+                    style="display: none;">
+                    Thank you for your submission! Results will be out on 29 Nov
+                </div>
+            </div>
+
+
+            <div class="container py-3">
+                <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                            class="active" aria-current="true"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="250px"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#F5D1B0"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-dark text-start">
+
+                                    <figure class="text-center align-middle">
+                                        <blockquote class="blockquote">
+                                            <p>I'm human, not God. Please don't have high expectations</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Benjamin</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <svg class="bd-placeholder-img" width="100%" height="250px"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#F5D1B0"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-dark text-start">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>Enjoy the show</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Amanda</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="250px"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#F5D1B0"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-dark text-start">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>I'm very happy to be performing as an angel, a servant of God</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Abbie</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="250px"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#F5D1B0"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-dark text-start">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>Being the bad guy is okay, but the singing part is hard Tabitha wants it
+                                                to
+                                                sound evil</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Jaden</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="250px"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#F5D1B0"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-dark text-start">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>If talent is a quarter then everyone would have a lot</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Alvis</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img" width="100%" height="250px"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#F5D1B0"></rect>
+                            </svg>
+                            <div class="container">
+                                <div class="carousel-caption text-dark text-start">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p>A life long experience</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Ayden</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="gallery" class="light-background p-5 text-center">
+        <div class="container pt-3">
+            <h1 class="display-6 fw-bold heading-font">Explore our gallery</h1>
+            <p class="col-lg-7 mx-auto lead fw-normal pb-3">
+                Look forward to viewing students’ project displays and enjoying contributions from our various sponsors and student creations. View some samples:
+            </p>
+            <div class="contain">
+                <button id="scrollLeft" class="chevron chevron-left">&lt;</button>
+                <div class="gallery-row">
+                    <div class="row-inner text-white">
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/main.jpeg" alt="I AM poster" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    I AM poster by Isaac
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/lea.beansandliving" target="_blank" class="tile">
+                            <div>
+                                <img class="tile-img" src="images/Lea_beans_logo.jpeg" alt="Lea beans logo" />
+                                <div class="tile-details">
+                                    <div class="tile-title link-warning link-underline-opacity-0">
+                                        Coffee by Lea beans & living
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/forsale-handmade.JPG"
+                                    alt="Handmade crafts by students" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    Handmade crafts by students
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/cookies-forsale.jpeg"
+                                    alt="Chocolate cookies by Eugenia" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    Chocolate cookies by Eugenia
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/more-peace-more-hope-shirt.png" alt="I AM shirt" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    More Peace More Hope shirt by Mary
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/iam-mug-front.png" alt="I AM mug" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    I AM mug by Mary
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/iam-totebag.png" alt="I AM tote bag" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    I AM tote bag by Mary
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/iam-cap.png" alt="I AM cap" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    I AM cap by Mary
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/science-project.jpeg"
+                                    alt="Science Project" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    Science Project
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile">
+                            <div>
+                                <img class="tile-img" src="images/cardboard-camera.jpeg"
+                                    alt="Other Students’ Work" />
+                            </div>
+                            <div class="tile-details">
+                                <div class="tile-title">
+                                    Other Students’ Work
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="scrollRight" class="chevron chevron-right">&gt;</button>
+            </div>
+        </div>
+    </section>
+    <section id="quiztime" class="light-background px-5 text-center">
+        <div class="container py-5">
+            <h1 class="display-6 fw-bold heading-font text-center">Quiz Time!</h1>
+            <p class="col-lg-8 mx-auto lead fw-normal pb-3 text-center ">
+                One of our students has been really into quizzes, and he designed this one especially for you. <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-stars" viewBox="0 0 23 23">
+                    <path
+                        d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+                </svg>
+            </p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxPZkTEOSe185Xl_0W47eyFbESrDftMvMEQ8nhvGsdVIjOIw/viewform?embedded=true" width="100%" height="2626" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+       
+        </div>
+             </div>
+    </section>
+
+    <script src="../js/vendor/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="../js/event.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/vendor/masonry.pkgd.min.js"></script>
+
+    <script>
+        AOS.init({
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+
+</html>
